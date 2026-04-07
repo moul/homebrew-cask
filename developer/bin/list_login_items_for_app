@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+# Standalone scripts are fine to use global variables
+# rubocop:disable Style/GlobalVars
+
 #
 # list_login_items_for_app
 #
@@ -64,3 +67,5 @@ end
 
 process_args
 list_login_items_for_app $app_path
+
+# rubocop:enable Style/GlobalVars
